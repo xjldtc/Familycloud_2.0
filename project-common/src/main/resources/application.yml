@@ -1,0 +1,9 @@
+#基础配置
+spring:
+  http:
+    converters:
+      preferred-json-mapper: gson
+    encoding:
+      charset: UTF-8
+      force: true
+    
