@@ -181,6 +181,7 @@ public class Constants {
      */
     public static enum ReturnCodeEnum{
     	
+    	SUCCESS(Long.valueOf(00000000),"成功"),
     	ERROR(Long.valueOf(-99999999),"未知错误");
     	
     	private ReturnCodeEnum(Long value,String name){
