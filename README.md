@@ -9,6 +9,6 @@ taskscheduling 任务调度模块，用于定时批处理任务
   
   
 引用方式为：  
-common<--biz<--restful         |
-common<--biz<--protal          | <-- assembly
-common<--biz<--taskscheduling  |
+common<--biz<--restful         |  
+common<--biz<--protal          | <-- assembly  
+common<--biz<--taskscheduling  |  
