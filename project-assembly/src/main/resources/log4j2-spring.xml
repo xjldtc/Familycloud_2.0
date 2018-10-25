@@ -14,8 +14,8 @@
             <!--<PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level %class{36} %L %M - %msg%xEx%n"/>-->
         <!--</File>-->
         <!--这个会打印出所有的信息，每次大小超过size，则这size大小的日志会自动存入按年份-月份建立的文件夹下面并进行压缩，作为存档-->
-        <RollingRandomAccessFile name="rollingFile" fileName="E:\log\familycloud2.0.log"
-                     filePattern="logs/$${date:yyyy-MM}/mtms3-%d{yyyy-MM-dd}-%i.log.gz">
+        <RollingRandomAccessFile name="rollingFile" fileName="info.log"
+                     filePattern="logs/$${date:yyyy-MM}/fc3-%d{yyyy-MM-dd}-%i.log.gz">
             <PatternLayout pattern="%d [%t] [%-5level] (%file,%line) - %m%xEx%n"/>
             <SizeBasedTriggeringPolicy size="15MB"/>
         </RollingRandomAccessFile>
@@ -40,6 +40,7 @@
 
         <!--建立一个默认的root的logger-->
         <AsyncRoot level="info" >
+            <AppenderRef ref="file"/>
             <AppenderRef ref="console"/>
         </AsyncRoot>
     </Loggers>

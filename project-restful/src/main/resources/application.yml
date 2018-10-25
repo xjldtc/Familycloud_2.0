@@ -1,16 +1,10 @@
 # 错误页，指定发生错误时，跳转的URL。
 server: 
-  error:
-    path: /error
-  port: 80
-# 服务端口
-# session最大超时时间(分钟)，默认为30
-# 该服务绑定IP地址，启动服务器时如本机不是该IP地址则抛出异常启动失败，只有特殊需求的情况下才配置
-# server.address=192.168.16.11
+  port: 8080
 #配置数据源
 spring:
   application:
-    name: family-cloud
+    name: family-cloud-restful
   profiles:
     active: ${mycloud_profile}
   datasource:
@@ -18,28 +12,7 @@ spring:
      username: ${spring_datasource_username}
      password: ${spring_datasource_password}
      driver-class-name: com.mysql.jdbc.Driver
-  batch:
-    job: 
-      enabled: false
   mvc:
     static-path-pattern: /**
     favicon:
       enabled: false
-  resources: 
-    static-locations: classpath:/templates/,classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/
-  thymeleaf:
-    cache: false
-    prefix: classpath:/templates/
-    check-template-location: true
-    suffix: .html
-    encoding: UTF-8
-    mode: HTML5
-    servlet: 
-      content-type: text/html
-#指定mybatis映射文件的地址
-mybatis:
-  mapper-locations: classpath:mapper/*.xml
-  configuration: 
-     mapUnderscoreToCamelCase: true
-logging:
-  file: E:\log\familycloud-portal.log

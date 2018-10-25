@@ -6,3 +6,9 @@ common 公共模块  用于规范不同项目开发规范的模块，和第三�
 protal 页面模块，用于页面展示业务相关功能  
 restful 对外服务接口，采用spring mvc - restful，提供对外接口  
 taskscheduling 任务调度模块，用于定时批处理任务  
+  
+  
+引用方式为：  
+common<--biz<--restful         |
+common<--biz<--protal          | <-- assembly
+common<--biz<--taskscheduling  |

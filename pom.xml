@@ -55,11 +55,11 @@
 	</properties>
 
 	<modules>
-<!-- 		<module>project-biz</module> -->
+        <module>project-biz</module>
 		<module>project-common</module>
 		<module>project-restful</module>
 <!-- 		<module>project-portal</module> -->
-<!-- 		<module>project-assembly</module> -->
+ 		<module>project-assembly</module>
 	</modules>
 
 	<dependencyManagement>

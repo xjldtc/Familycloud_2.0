@@ -10,13 +10,13 @@
 	<modelVersion>4.0.0</modelVersion>
 	<version>1.0.0-TEST</version>
 	<packaging>jar</packaging>
-    <artifactId>fc-restful</artifactId>
-	<name>FamilyCloud Restful</name>
+    <artifactId>fc-biz</artifactId>
+	<name>FamilyCloud Biz</name>
 
 	<dependencies>
 		<dependency>
 			<groupId>com.xjldtc.framework.familycloud</groupId>
-			<artifactId>fc-biz</artifactId>
+			<artifactId>fc-common</artifactId>
 			<version>1.0.0-TEST</version>
 		</dependency>
     </dependencies>
